@@ -1,0 +1,348 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./MyKassa.css">
+  <link rel="stylesheet" href="./css/bugungi-savdo.css">
+</head>
+
+<body>
+  <div id="tabs-container" class="tab-container">
+    <div id="tabs" class="tabs">
+    </div>
+
+    <button id="addTab" class="add-tab" onclick="createTab()">+</button>
+  </div>
+
+  <div id="tabContent" class="tabContent">
+
+    <div class="container">
+      <div class="search border item1">
+        <img src="./Images/search-normal.png" alt="search" />
+        <input type="text" placeholder="Qidiruv" id="keyboardInput" class="keyboard-input" />
+      </div>
+      <div class="border text SavdoLink item2">
+        <img src="./Images/card-pos.png" alt="bugungi savdo" />
+        <span>Bugungi Savdo</span>
+      </div>
+      <div class="border text SavdoLink item3">
+        <img src="./Images/empty-wallet.png" alt="xarajat" />
+        <span>Xarajat</span>
+      </div>
+      <div class="border text SavdoLink item4">
+        <img src="./Images/user.png" alt="mijoz" />
+        <span>Mijoz</span>
+      </div>
+      <div class="border text SavdoLink item5" id="accaunt">
+        <div class="box">
+          <img src="./Images/profile-circle.png" alt="accaunt" />
+          <span>Islom Abdullaev</span>
+        </div>
+        <img src="./Images/logout.png" alt="logout" class="logout" />
+      </div>
+
+      <div class="Sozlamalar" style="display: none;">
+        <div class="box">
+          <div class="img"></div>
+          <h2>Profil</h2>
+        </div>
+        <div class="box">
+          <div class="img"></div>
+          <h2>Parolni o’zgartirish</h2>
+        </div>
+        <div class="box">
+          <div class="img"></div>
+          <h2>Sozlamalar </h2>
+        </div>
+        <div class="box">
+          <div class="img"></div>
+          <h2>Tilni o’zgartirish</h2>
+        </div>
+        <div class="box">
+          <div class="img"></div>
+          <h2>Tungi rejim</h2>
+        </div>
+        <div class="box">
+          <div class="img"></div>
+          <h2>Chiqish</h2>
+        </div>
+      </div>
+
+      <div id="savat" class="tab-inner-content Savat item6 border">
+        <div class="Savdo Akbar">
+          <div class="table-container">
+            <table class="scrollable-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Tovar nomi</th>
+                  <th>Narxi</th>
+                  <th>Summasi</th>
+                  <th>Sonni</th>
+                  <th>O’chirish</th>
+                </tr>
+              </thead>
+              <tbody id="product" class="product">
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Futbolka</td>
+                  <td>15 000 So’m</td>
+                  <td>1 500 000 So’m</td>
+                  <td>
+                    <div class="pilusdiv">
+                      <button class="minus">-</button>
+                      <h4 class="son">0</h4>
+                      <button class="plus">+</button>
+                    </div>
+                  </td>
+                  <td><img class="trash" src="./Images/trash.png" alt=""></td>
+                </tr>
+                             
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="Hisob border item7 border" style="padding: 0;">
+        <div class="HisobJoyi HisobKichik" id="hisobjoyi">
+          <div class="box1">
+            <h2>Logo</h2>
+          </div>
+
+          <div class="bigbox">
+            <div class="box2 flex">
+              <div class="HisobUser" id="MyDiv">
+                <img src="../Images/user2.png" alt="">
+                <input type="text" id="myInput">
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn" for="btnradio1">%</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn" for="btnradio2">UZS</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="box3 flex">
+              <button>15%</button>
+              <button>30%</button>
+              <button>50%</button>
+              <button>75%</button>
+              <button>90%</button>
+            </div>
+
+            <div class="minikeypad">
+              <div class="keybox1">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>00</button>
+              </div>
+              <div class="keybox2">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>000</button>
+              </div>
+              <div class="keybox3">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="backspace-btn"><img src="./Images/backspace.png" alt=""></button>
+              </div>
+              <div class="keybox4">
+                <button class="clear-btn">C</button>
+                <button>0</button>
+                <button>.</button>
+                <button class="check-btn">&#10004;</button>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="box4 flex">
+              <h3>Chegirma</h3>
+              <h3>0 UZS</h3>
+            </div>
+            <div class="box4 flex">
+              <h3>Jami</h3>
+              <h3>0 UZS</h3>
+            </div>
+            <div class="box5 flex">
+              <button class="btn-tolov">To’lov</button>
+              <button class="btn-print"><img src="../Images/printer.png" alt=""></button>
+              <button class="btn-mmm"><img src="../Images/mmm.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
